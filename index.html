@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>基于《红楼梦》的社交网络分析</title>
+  <meta name="description" content="案例以中国古典文学名著《红楼梦》为研究对象，运用社会网络分析（SNA）中的图论方法，对小说中的人物关系网络进行系统性挖掘与分析。">
+  <style>
+    :root{--bg:#f7f8fb;--card:#ffffff;--accent:#c0392b;--muted:#6b6b6b}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,"PingFang SC","Microsoft YaHei",Arial,Helvetica,sans-serif;margin:0;background:var(--bg);color:#222}
+    header{background:linear-gradient(90deg,rgba(192,57,43,0.95),rgba(231,76,60,0.9));color:#fff;padding:28px 16px}
+    .container{max-width:960px;margin:24px auto;padding:0 16px}
+    h1{margin:0;font-size:1.6rem}
+    nav{margin-top:12px}
+    nav a{color:rgba(255,255,255,0.95);margin-right:12px;text-decoration:none}
+    .card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(25,25,25,0.06);margin-bottom:18px}
+    .muted{color:var(--muted)}
+    #network{height:520px;border-radius:8px;background:linear-gradient(180deg,#fff,#f4f6f9);display:flex;align-items:center;justify-content:center;color:#999}
+    footer{padding:18px;text-align:center;color:#666;font-size:0.9rem}
+    @media (max-width:600px){header{padding:18px}#network{height:360px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>基于《红楼梦》的社交网络分析</h1>
+      <nav>
+        <a href="#intro">简介</a>
+        <a href="#method">方法</a>
+        <a href="#visual">可视化</a>
+        <a href="#about">关于</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="intro" class="card">
+      <h2>项目简介</h2>
+      <p>案例以中国古典文学名著《红楼梦》为研究对象，运用社会网络分析（Social Network Analysis, SNA）中的图论方法，对小说中的人物关系网络进行系统性挖掘与分析。通过将文学文本转化为数学模型（图结构），量化计算各人物在社交网络中的核心度排名，从而揭示小说中隐藏的人物关系结构与社交格局。</p>
+    </section>
+
+    <section id="method" class="card">
+      <h2>方法与数据</h2>
+      <p class="muted">本仓库目前以 HTML 页面为主，后续可加入数据文件（CSV/JSON）与分析脚本（Python/R）以及前端可视化脚本（D3.js / vis.js / sigma.js）。</p>
+      <ul>
+        <li>文本预处理：分词、人物实体识别、共现关系抽取</li>
+        <li>图构建：节点为人物，边表示关系或共现，带/不带权重</li>
+        <li>分析指标：度中心性、介数中心性、特征向量中心性、社区检测等</li>
+      </ul>
+    </section>
+
+    <section id="visual" class="card">
+      <h2>人物关系网络（占位）</h2>
+      <div id="network">可视化占位区 — 在此处加入 D3 / vis.js / sigma 可视化脚本</div>
+      <p class="muted">提示：将来可把数据放在 <code>data/</code> 目录（例如 nodes.json / edges.json），然后在此处用前端脚本载入并绘图。</p>
+    </section>
+
+    <section id="about" class="card">
+      <h2>关于</h2>
+      <p>作者: Ria369-cpu</p>
+      <p>仓库 ID: 1287813667</p>
+    </section>
+  </main>
+
+  <footer>
+    本页由仓库自动生成。如需定制主页内容或添加交互可视化脚本，请在仓库中添加相关文件并告知。
+  </footer>
+
+  <script>
+    // 可选：将来可在这里加入可视化加载逻辑，例如：
+    // fetch('data/nodes.json').then(r=>r.json()).then(nodes=>{...})
+    // 也可以在这里动态加载 D3 / vis.js CDN 脚本并渲染网络图。
+    console.log('主页加载');
+  </script>
+</body>
+</html>
