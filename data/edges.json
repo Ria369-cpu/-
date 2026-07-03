@@ -1,0 +1,11 @@
+[
+  {"source":"贾宝玉","target":"林黛玉","value":8},
+  {"source":"贾宝玉","target":"薛宝钗","value":6},
+  {"source":"贾宝玉","target":"王熙凤","value":4},
+  {"source":"林黛玉","target":"薛宝钗","value":3},
+  {"source":"王熙凤","target":"贾琏","value":7},
+  {"source":"贾母","target":"王夫人","value":5},
+  {"source":"史湘云","target":"贾宝玉","value":4},
+  {"source":"刘姥姥","target":"王夫人","value":2},
+  {"source":"尤氏","target":"贾琏","value":3}
+]
